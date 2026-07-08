@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Portal | Vivian Ho, MD</title>
+<meta name="description" content="Information about the patient portal for Vivian Ho, MD.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300,0;9..144,400,0;9..144,500,0;9..144,600,0;9..144,400,1;9..144,500,1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="spine" aria-hidden="true">
+  <svg width="2" height="100%" viewBox="0 0 2 100" preserveAspectRatio="none">
+    <line x1="1" y1="0" x2="1" y2="100" class="spine-track"/>
+    <line x1="1" y1="0" x2="1" y2="0" class="spine-fill" id="spineFill"/>
+  </svg>
+</div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__mark">
+    <span>Vivian Ho, MD</span>
+    <small>Psychiatry &amp; Psychotherapy</small>
+  </a>
+  <nav class="nav__links">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="portal.html" aria-current="page">Patient Portal</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+  <section class="page-hero">
+    <p class="eyebrow">Patient Portal</p>
+    <h1>Coming soon.</h1>
+    <p>The secure patient portal is in development. When it is available, current patients will be able to schedule appointments, message the office, and manage billing directly through the portal.</p>
+  </section>
+
+  <section class="section">
+    <div class="page-card reveal">
+      <p>For now, please reach out through the contact page if you have questions or need to connect with the office.</p>
+      <a href="contact.html" class="btn btn--primary">Contact the office</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__links" aria-label="Legal links">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <span class="link-divider">|</span>
+    <a href="good-faith-estimate.html">Good Faith Estimate</a>
+    <span class="link-divider">|</span>
+    <a href="open-payment-notice.html">Open Payment Notice</a>
+  </div>
+  <p>&copy; <span id="year"></span> Vivian Ho, MD. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Vivian Ho, MD</title>
+<meta name="description" content="Contact Vivian Ho, MD for psychiatry and psychotherapy inquiries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300,0;9..144,400,0;9..144,500,0;9..144,600,0;9..144,400,1;9..144,500,1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="spine" aria-hidden="true">
+  <svg width="2" height="100%" viewBox="0 0 2 100" preserveAspectRatio="none">
+    <line x1="1" y1="0" x2="1" y2="100" class="spine-track"/>
+    <line x1="1" y1="0" x2="1" y2="0" class="spine-fill" id="spineFill"/>
+  </svg>
+</div>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__mark">
+    <span>Vivian Ho, MD</span>
+    <small>Psychiatry &amp; Psychotherapy</small>
+  </a>
+  <nav class="nav__links">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+    <a href="portal.html">Patient Portal</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+  <section class="page-hero">
+    <p class="eyebrow">Contact</p>
+    <h1>Get in touch.</h1>
+    <p>For inquiries about care, referrals, or scheduling, please use the contact form below or reach out directly by email or phone.</p>
+  </section>
+
+  <section class="section">
+    <div class="contact__grid">
+      <div class="contact__details reveal">
+        <p class="contact__line"><span>Phone</span><a href="tel:12515189811">(251) 518-9811</a></p>
+        <p class="contact__line"><span>Email</span><a href="mailto:hopsychiatry@gmail.com">hopsychiatry@gmail.com</a></p>
+        <p class="contact__line"><span>Locations</span>Bay Area, CA · Telehealth throughout CA · Milwaukee, WI (in person &amp; telehealth)</p>
+        <p class="contact__note">This form is not monitored 24/7 and is not intended for emergencies. If you are in crisis, call or text <strong>988</strong> or call <strong>911</strong>.</p>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" action="https://formspree.io/f/mqevvzdd" method="POST">
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Phone <span class="optional">(optional)</span>
+          <input type="tel" name="phone">
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">Send message</button>
+        <p class="form__status" id="formStatus" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__links" aria-label="Legal links">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <span class="link-divider">|</span>
+    <a href="good-faith-estimate.html">Good Faith Estimate</a>
+    <span class="link-divider">|</span>
+    <a href="open-payment-notice.html">Open Payment Notice</a>
+  </div>
+  <p>&copy; <span id="year"></span> Vivian Ho, MD. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
