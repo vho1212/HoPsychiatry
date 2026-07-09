@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300,0;9..144,400,0;9..144,500,0;9..144,600,0;9..144,400,1;9..144,500,1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="rocks-band.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="rocks-band.jpg" imagesrcset="rocks-band-800.webp 800w, rocks-band-1200.webp 1200w, rocks-band-1536.webp 1536w" imagesizes="100vw" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -38,7 +38,10 @@
 
 <main>
   <section class="page-hero page-hero--photo">
-    <img class="page-hero__bg" src="rocks-band.jpg" alt="Rocks arranged in a calm natural setting" loading="eager" fetchpriority="high" decoding="async">
+    <picture>
+      <source type="image/webp" srcset="rocks-band-800.webp 800w, rocks-band-1200.webp 1200w, rocks-band-1536.webp 1536w" sizes="100vw">
+      <img class="page-hero__bg" src="rocks-band.jpg" srcset="rocks-band-800.jpg 800w, rocks-band-1200.jpg 1200w, rocks-band-1536.jpg 1536w" sizes="100vw" alt="Rocks arranged in a calm natural setting" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
     <div class="page-hero__scrim" aria-hidden="true"></div>
     <div class="page-hero__inner">
       <p class="eyebrow">Services</p>
@@ -81,6 +84,9 @@
 </main>
 
 <footer class="footer">
+  <div class="footer__cta">
+    <a href="contact.html" class="btn btn--primary">Get in Touch</a>
+  </div>
   <div class="footer__links" aria-label="Legal links">
     <a href="privacy-policy.html">Privacy Policy</a>
     <span class="link-divider">|</span>

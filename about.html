@@ -39,14 +39,16 @@
   <section class="page-hero">
     <p class="eyebrow">About Me</p>
     <h1>I’m a Stanford-trained psychiatrist and psychotherapist offering care for California and Wisconsin patients.</h1>
-    <p>A calm, thoughtful approach to mental well-being.</p>
   </section>
 
   <section class="section">
     <div class="about__intro">
       <div class="about__portrait reveal" aria-hidden="true">
         <div class="portrait-frame">
-          <img src="headshot-hq.jpg" alt="Vivian Ho, MD" width="1402" height="1122" loading="lazy" decoding="async" />
+          <picture>
+            <source type="image/webp" srcset="headshot-hq-700.webp 700w, headshot-hq-1402.webp 1402w" sizes="(max-width: 780px) 90vw, 460px">
+            <img src="headshot-hq.jpg" srcset="headshot-hq-700.jpg 700w, headshot-hq-1402.jpg 1402w" sizes="(max-width: 780px) 90vw, 460px" alt="Vivian Ho, MD" width="1402" height="1122" loading="eager" fetchpriority="high" decoding="async" />
+          </picture>
         </div>
       </div>
       <div class="about__text reveal">
@@ -83,6 +85,9 @@
 </main>
 
 <footer class="footer">
+  <div class="footer__cta">
+    <a href="contact.html" class="btn btn--primary">Get in Touch</a>
+  </div>
   <div class="footer__links" aria-label="Legal links">
     <a href="privacy-policy.html">Privacy Policy</a>
     <span class="link-divider">|</span>
