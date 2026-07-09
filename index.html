@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300,0;9..144,400,0;9..144,500,0;9..144,600,0;9..144,400,1;9..144,500,1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="chair.jpg" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -61,9 +62,7 @@
     </div>
     <div class="hero__figure reveal" aria-hidden="true">
       <div class="hero__art">
-        <svg viewBox="0 0 400 400" class="linework">
-          <path class="linework__path" d="M112 288C76 244 76 160 128 122C180 84 282 80 322 126C364 174 358 258 312 298C270 336 198 344 154 324C138 317 126 307 112 288Z"/>
-        </svg>
+        <img src="chair.jpg" alt="A calm chair setting with warm natural light" width="900" height="900" loading="eager" fetchpriority="high" decoding="async">
       </div>
     </div>
   </section>
@@ -76,10 +75,10 @@
     </div>
     <div class="photo-band__grid">
       <article class="photo-card photo-card--wide">
-        <img src="chair.png" alt="A calm chair setting with warm natural light">
+        <img src="chair.jpg" alt="A calm chair setting with warm natural light" width="900" height="1200" loading="lazy" decoding="async">
       </article>
       <article class="photo-card">
-        <img src="rocks.png" alt="Rocks arranged in a calm natural setting">
+        <img src="rocks.jpg" alt="Rocks arranged in a calm natural setting" width="900" height="1200" loading="lazy" decoding="async">
       </article>
     </div>
   </section>
