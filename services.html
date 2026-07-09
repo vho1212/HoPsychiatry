@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300,0;9..144,400,0;9..144,500,0;9..144,600,0;9..144,400,1;9..144,500,1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="rocks-band.jpg" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -36,10 +37,14 @@
 </header>
 
 <main>
-  <section class="page-hero">
-    <p class="eyebrow">Services</p>
-    <h1>Support that is individualized, evidence-based, and steady.</h1>
-    <p>I provide compassionate psychiatric care tailored to your goals, pace, and lived experience. My practice integrates medication support, psychotherapy, and wellness-focused support in a way that feels practical and grounded.</p>
+  <section class="page-hero page-hero--photo">
+    <img class="page-hero__bg" src="rocks-band.jpg" alt="Rocks arranged in a calm natural setting" loading="eager" fetchpriority="high" decoding="async">
+    <div class="page-hero__scrim" aria-hidden="true"></div>
+    <div class="page-hero__inner">
+      <p class="eyebrow">Services</p>
+      <h1>Support that is individualized, evidence-based, and steady.</h1>
+      <p>I provide compassionate psychiatric care tailored to your goals, pace, and lived experience. My practice integrates medication support, psychotherapy, and wellness-focused support in a way that feels practical and grounded.</p>
+    </div>
   </section>
 
   <section class="section section--tint">

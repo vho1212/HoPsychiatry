@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300,0;9..144,400,0;9..144,500,0;9..144,600,0;9..144,400,1;9..144,500,1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="chair.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="chair-hero.jpg" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -43,6 +43,8 @@
 
 <main id="top">
   <section class="hero" id="hero">
+    <img class="hero__bg" src="chair-hero.jpg" alt="A calm chair setting with warm natural light" loading="eager" fetchpriority="high" decoding="async">
+    <div class="hero__scrim" aria-hidden="true"></div>
     <div class="hero__inner">
       <p class="eyebrow reveal">Psychiatry and Psychotherapy</p>
       <h1 class="hero__title reveal">
@@ -59,27 +61,6 @@
         <a href="about.html" class="btn btn--primary">Meet Dr. Ho</a>
         <a href="services.html" class="btn btn--ghost">Explore services</a>
       </div>
-    </div>
-    <div class="hero__figure reveal" aria-hidden="true">
-      <div class="hero__art">
-        <img src="chair.jpg" alt="A calm chair setting with warm natural light" width="900" height="900" loading="eager" fetchpriority="high" decoding="async">
-      </div>
-    </div>
-  </section>
-
-  <section class="photo-band reveal" aria-label="A calm philosophy of care">
-    <div class="photo-band__copy">
-      <p class="eyebrow">A grounded practice</p>
-      <h2>Steady, personal care for life’s heavier seasons.</h2>
-      <p>My work blends evidence-based treatment with warmth, reflection, and a deep respect for your pace.</p>
-    </div>
-    <div class="photo-band__grid">
-      <article class="photo-card photo-card--wide">
-        <img src="chair.jpg" alt="A calm chair setting with warm natural light" width="900" height="1200" loading="lazy" decoding="async">
-      </article>
-      <article class="photo-card">
-        <img src="rocks.jpg" alt="Rocks arranged in a calm natural setting" width="900" height="1200" loading="lazy" decoding="async">
-      </article>
     </div>
   </section>
 
