@@ -302,6 +302,30 @@ a { color: inherit; }
   margin: 0 auto;
 }
 
+.intro-blurb {
+  max-width: 720px;
+  text-align: center;
+  padding-top: clamp(48px, 7vw, 90px);
+  padding-bottom: clamp(48px, 7vw, 90px);
+}
+.intro-blurb h2 {
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+  margin-bottom: 0.7em;
+}
+.intro-blurb p {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  margin-bottom: 1.2em;
+}
+.text-link {
+  font-family: var(--sans);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+}
+.text-link:hover { opacity: 0.7; }
+
 .photo-band {
   max-width: var(--max);
   margin: 0 auto clamp(2rem, 4vw, 3rem);
