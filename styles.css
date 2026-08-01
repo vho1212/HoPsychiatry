@@ -480,7 +480,6 @@ a { color: inherit; }
 }
 .service-flow-item__body p {
   margin: 0;
-  max-width: 700px;
   line-height: 1.75;
 }
 
